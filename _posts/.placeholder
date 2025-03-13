@@ -1,1 +1,40 @@
 
+---
+layout: post
+title: 'Write Up HackDay 2024: The Analyst'
+categories:
+- CTF
+- Forensic
+tags:
+- forensic
+- kerberos
+- hackday
+- windows
+- ad
+- ctf
+lang: en
+date: 2024-03-31 16:00 +0100
+description: This is the official write-up of the forensic challenge "The Analyst"
+  which took place during the 2024 HackDay finals
+image: "/assets/img/HackDay2024/9_hackday.png"
+---
+## Context
+As a challenge creator of the HackDay CTF since 2022, I created a Forensic challenge for the 2024 HackDay finals.
+Each year a new theme is chosen, this year the theme of espionage has been chosen.
+This is the official write-up of this challenge.
+
+## Statement
+Our chief has recovered a Syndicate file given to him by our secret agent Hawkeye. It contains communications from a Syndicate member who is planning a mass attack.
+
+Our chief is asking you to **decrypt** this information in order to trace his future actions:
+
+* `TGT renewal date` in dd/mm/yyyy format
+* `User's machine name` in uppercase (example: SERVER99)
+* `Last subkey value` (example: 99zae54e450ef88ee55511900666115441cd)
+* `User SID` (example: S-1-5-21-123456789-987456321-10000000000-1000)
+
+## Files
+
+The following two files are given to participants in order to solve the challenge:
+* PCAP capture: [analysis_admin.pcapng](/files/HackDay2024/analysis_admin.pcapng)
+* Credentials file: [creds.txt](/files/HackDay2024/creds.txt)
